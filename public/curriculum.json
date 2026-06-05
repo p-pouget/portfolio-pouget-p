@@ -1,0 +1,70 @@
+{
+    "experiences": [
+        {
+            "id": "1",
+            "titre": "Développeur Full Stack – Alternance",
+            "entreprise": "NotiDev - Pau, France",
+            "date": "2024 - PRÉSENT",
+            "description": "Développement de fonctionnalités front-end en React et Tailwind CSS au sein d'une équipe agile. Intégration d'une pipeline d'automatisation via n8n et mise en place d'un système de notifications temps réel. Participation active aux revues de code et aux sprints hebdomadaires. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque"
+        },
+        {
+            "id": "2",
+            "titre": "Stagiaire Développeur Web",
+            "entreprise": "Agence Digitale Fictive - Bayonne, France",
+            "date": "2023 - 2024",
+            "description": "Conception et déploiement d'un outil interne de gestion de protocoles de test en Astro SSR, Supabase et Vercel. Implémentation d'un système d'authentification sécurisé par cookies d'environnement. Rédaction de la documentation technique à destination des équipes métier. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque"
+        },
+        {
+            "id": "3",
+            "titre": "Technicien Qualité",
+            "entreprise": "Safran Aerosystems - Pau, France",
+            "date": "2018 - 2023",
+            "description": "Contrôle qualité de pièces aéronautiques en tôlerie fine. Rédaction et suivi de non-conformités, interface avec les équipes de production et les fournisseurs. Développement d'outils bureautiques pour l'automatisation des rapports de contrôle.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque"
+        }
+    ],
+    "formations": [
+        {
+            "id": "1",
+            "diplome": "Concepteur Développeur d'Applications (Bac+3/4)",
+            "etablissement": "La Fabrique Numérique Paloise - Pau, France",
+            "date": "2023 - 2025"
+        },
+        {
+            "id": "2",
+            "diplome": "BTS Aéronautique",
+            "etablissement": "Lycée Louis Barthou - Pau, France",
+            "date": "2016 - 2018"
+        },
+        {
+            "id": "3",
+            "diplome": "Baccalauréat Scientifique",
+            "etablissement": "Lycée Fictif du Béarn - Pau, France",
+            "date": "2013 - 2016"
+        }
+    ],
+    "competences": {
+        "hardSkills": [
+            "HTML / CSS",
+            "JavaScript (ES6+)",
+            "React / Tailwind",
+            "Node.js / Express",
+            "MongoDB / Supabase",
+            "Docker / n8n / Ollama",
+            "Git / GitHub",
+            "Figma"
+        ],
+        "softSkills": [
+            "Rigueur qualité",
+            "Autonomie",
+            "Esprit d'analyse",
+            "Communication",
+            "Adaptabilité"
+        ],
+        "langues": [
+            "Français (natif)",
+            "Anglais (B2)",
+            "Espagnol (notions)"
+        ]
+    },
+    "photo": "https://media.istockphoto.com/id/1179182459/fr/photo/alpaga-blanc-sur-le-fond-bleu.jpg?s=2048x2048&w=is&k=20&c=ngD5ccyiC17OEl9AFwn3IJcAlQGit_qf8aYf-uqletY="
+}

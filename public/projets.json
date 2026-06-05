@@ -1,0 +1,154 @@
+[
+    {
+        "id": "1",
+        "titre": "Système de Gestion PIM",
+        "stack": [
+            "React",
+            "React",
+            "Vue.js",
+            "React",
+            "Node.js"
+        ],
+        "description": "Interface d'administration pour la gestion des informations produits. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/pim-system",
+        "lienDeploiement": "https://pim.exemple.com",
+        "img": "https://picsum.photos/seed/proj1/800/600",
+        "selected": true
+    },
+    {
+        "id": "2",
+        "titre": "Plateforme B2B",
+        "stack": [
+            "Vue.js",
+            "React",
+            "Laravel"
+        ],
+        "description": "Portail de commande et de facturation pour clients professionnels. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/b2b-portal",
+        "lienDeploiement": "https://b2b.exemple.com",
+        "img": "https://picsum.photos/seed/proj2/800/600",
+        "selected": false
+    },
+    {
+        "id": "3",
+        "titre": "Outil d'Analyse de Données",
+        "stack": [
+            "Angular",
+            "Vue.js",
+            "React",
+            "Spring Boot"
+        ],
+        "description": "Tableau de bord analytique générant des rapports financiers automatisés. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/data-analytics",
+        "lienDeploiement": "https://analytics.exemple.com",
+        "img": "https://picsum.photos/seed/proj3/800/600",
+        "selected": true
+    },
+    {
+        "id": "4",
+        "titre": "Application de Suivi Logistique",
+        "stack": [
+            "Svelte",
+            "Vue.js",
+            "React",
+            "Express"
+        ],
+        "description": "Suivi en temps réel des expéditions et optimisation des tournées. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/logistics-tracker",
+        "lienDeploiement": "https://logistics.exemple.com",
+        "img": "https://picsum.photos/seed/proj4/800/600",
+        "selected": false
+    },
+    {
+        "id": "5",
+        "titre": "Moteur de Réservation",
+        "stack": [
+            "Next.js",
+            "Vue.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "description": "Système de réservation de ressources internes avec gestion des conflits. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/booking-engine",
+        "lienDeploiement": "https://booking.exemple.com",
+        "img": "https://picsum.photos/seed/proj5/800/600",
+        "selected": false
+    },
+    {
+        "id": "6",
+        "titre": "Réseau Social d'Entreprise",
+        "stack": [
+            "Nuxt.js",
+            "Vue.js",
+            "React",
+            "NestJS"
+        ],
+        "description": "Plateforme de communication interne sécurisée avec messagerie asynchrone. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/corporate-social",
+        "lienDeploiement": "https://social.exemple.com",
+        "img": "https://picsum.photos/seed/proj6/800/600",
+        "selected": true
+    },
+    {
+        "id": "7",
+        "titre": "Application Mobile IoT",
+        "stack": [
+            "React Native",
+            "Vue.js",
+            "React",
+            "Vue.js",
+            "React",
+            "Firebase"
+        ],
+        "description": "Contrôle et monitoring à distance d'équipements industriels connectés. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/iot-mobile",
+        "lienDeploiement": "https://iot.exemple.com",
+        "img": "https://picsum.photos/seed/proj7/800/600",
+        "selected": true
+    },
+    {
+        "id": "8",
+        "titre": "API de Géocodage",
+        "stack": [
+            "Python",
+            "Python",
+            "Python",
+            "FastAPI"
+        ],
+        "description": "Service RESTful de conversion d'adresses postales en coordonnées spatiales. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/geo-api",
+        "lienDeploiement": "https://geo.exemple.com",
+        "img": "https://picsum.photos/seed/proj8/800/600",
+        "selected": false
+    },
+    {
+        "id": "9",
+        "titre": "Outil de Migration de Base de Données",
+        "stack": [
+            "Go",
+            "Python",
+            "Python",
+            "Docker"
+        ],
+        "description": "Utilitaire CLI pour l'automatisation des transferts de données entre environnements. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/db-migrator",
+        "lienDeploiement": "https://migrator.exemple.com",
+        "img": "https://picsum.photos/seed/proj9/800/600",
+        "selected": true
+    },
+    {
+        "id": "10",
+        "titre": "Intranet Documentaire",
+        "stack": [
+            "PHP",
+            "Python",
+            "Python",
+            "Symfony"
+        ],
+        "description": "Solution d'archivage et de recherche en texte intégral pour documents administratifs. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem soluta nihil quidem! Deserunt consequatur, omnis voluptates at ipsum voluptatum aperiam error tempore recusandae ex, sapiente repellendus dignissimos, cupiditate doloremque",
+        "lienGithub": "https://github.com/exemple/doc-intranet",
+        "lienDeploiement": "https://docs.exemple.com",
+        "img": "https://picsum.photos/seed/proj10/800/600",
+        "selected": false
+    }
+]
