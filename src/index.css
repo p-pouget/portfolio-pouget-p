@@ -7,3 +7,12 @@
             background-color: #FFFFFF;
             color:black
         }
+
+/* @layer base = couche Tailwind pour les styles HTML bruts (resets, éléments natifs) */
+/* Placé ici, ce style ne conflicte pas avec les classes Tailwind qui s'appliquent après */
+@layer base {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #F9F9F9 inset;
+    -webkit-text-fill-color: black;
+  }
+}

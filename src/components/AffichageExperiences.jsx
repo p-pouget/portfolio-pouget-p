@@ -29,7 +29,7 @@ export default function AffichageExperiences({ curriculumIntegral }) {
 
           return (
             <Link
-              to={`/cv/experiences/${experience.id}`}
+              to={`/cv/${experience.id}`}
               key={experience.id}
               className="group block border-b border-black/10 hover:border-black py-5 px-4 transition-colors duration-300"
             >
@@ -50,19 +50,22 @@ export default function AffichageExperiences({ curriculumIntegral }) {
                 </p>
                 <div className="flex items-end justify-between gap-4">
                   <p className="text-[#5E5E5E] text-xs tracking-wide md:tracking-normal md:text-sm group-hover:text-black transition-colors duration-300">
-                    <span className="md:hidden">
-                      {descriptionRaccourciMobile}
-                    </span>
                     <span className="hidden md:inline">
                       {descriptionRaccourci}
                     </span>
+                    <span className="md:hidden">
+                      {descriptionRaccourciMobile}
+                    </span>
                   </p>
-                  <span className="text-xs font-bold uppercase tracking-wide text-[#5E5E5E] group-hover:text-black border-b border-transparent group-hover:border-black transition-colors duration-300 shrink-0"> 
+                  <span className="hidden md:inline text-xs font-bold uppercase tracking-wide text-[#5E5E5E] group-hover:text-black border-b border-transparent group-hover:border-black transition-colors duration-300 md:shrink-0">
                     {/* shrink gere le nombre de ligne de l'élément = responsive ok et donc pas besoin de gerer avec max-w ...*/}
                     See more →
                   </span>
-                  
                 </div>
+                <span className="md:hidden inline-block mt-4 text-xs font-bold uppercase tracking-wide text-[#5E5E5E] group-hover:text-black border-b border-transparent group-hover:border-black transition-colors duration-300 md:shrink-0">
+                  {/* Inline-Bloc car sinon le span ne prend pas mt .. car élément libre */}
+                  See more →
+                </span>
               </div>
             </Link>
           );

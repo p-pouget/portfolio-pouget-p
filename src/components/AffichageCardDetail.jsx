@@ -4,6 +4,7 @@ export default function AffichageCardDetail({
   titre,
   description,
   stack,
+  entreprise,
   lienGithub,
   lienDeploiement,
   img,
@@ -34,6 +35,13 @@ export default function AffichageCardDetail({
             {stack.join(" / ")}
           </p>
         )}
+        {/* // COURT CIRCUIT && : Si ca existe, affiche la balise, si rien(=null)
+          Affiche rien. Le && agit comme un ALORS. */}
+        {entreprise && (
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#5E5E5E] mb-6">
+            {entreprise}
+          </p>
+        )}
         <p className="text-sm md:text-base text-[#5E5E5E] mb-8">
           {description}
         </p>
@@ -47,10 +55,10 @@ export default function AffichageCardDetail({
               rel="noreferrer"
               className="md:px-4 mb-4 group flex items-end justify-between border-b border-black/10 pb-2 hover:border-black transition-colors duration-300"
             >
-              <span class="text-sm font-semibold uppercase tracking-widest text-[#5E5E5E] group-hover:text-black translate-x-0 group-hover:translate-x-2 transition-transform">
+              <span className="text-sm font-semibold uppercase tracking-widest text-[#5E5E5E] group-hover:text-black translate-x-0 group-hover:translate-x-2 transition-transform">
                 VIEW Code
               </span>
-              <span class="text-sm font-semibold text-[#5E5E5E] group-hover:text-black">
+              <span className="text-sm font-semibold text-[#5E5E5E] group-hover:text-black">
                 GitHub
               </span>
             </a>

@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Login from "./pages/Login";
 import Project from "./pages/Project";
+import Experience from "./pages/Experience";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/projects/:id" element={<Project />} />
+            <Route path="/cv/:id" element={<Experience />} />
           </Routes>
         </main>
         <Footer />

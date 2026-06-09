@@ -38,13 +38,13 @@ export default function Cv() {
       {curriculumErreur ? (
         false
       ) : curriculum ? (
-        <div className="flex flex-col md:flex-row md:gap-16">
+        <div className="flex flex-col md:flex-row md:gap-20">
           <div className="flex-1">
             <AffichageExperiences curriculumIntegral={curriculum} />
             <AffichageFormations curriculumIntegral={curriculum} />
           </div>
 
-          <div className="md:w-72 md:shrink-0">
+          <div className="md:w-68 md:shrink-0">
             <AffichageCompetences curriculumIntegral={curriculum} />
             <AffichagePhoto curriculumIntegral={curriculum} />
           </div>
