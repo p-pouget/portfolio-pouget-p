@@ -4,6 +4,8 @@ import AffichageFormContact from "../components/AffichageFormContact";
 import AffichageMailContact from "../components/AffichageMailContact";
 import StatutChargement from "../components/StatutChargement";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export default function Contact() {
   const [mail, setMail] = useState();
   const [mailErreur, setMailErreur] = useState(false);
@@ -19,7 +21,7 @@ export default function Contact() {
   useEffect(() => {
     async function getMail() {
       try {
-        const response = await fetch(`/mail.json`);
+        const response = await fetch(`${API_URL}/api/mail`);
 
         if (!response.ok) {
           throw new Error("Données non trouvées");

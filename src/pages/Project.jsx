@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import AffichageCardDetail from "../components/AffichageCardDetail";
 import StatutChargement from "../components/StatutChargement";
 
-const BASE_URL = "/projets.json"; // Mettre le / sinon BUG
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function Article() {
   const { id } = useParams();
@@ -17,13 +17,14 @@ export default function Article() {
   useEffect(() => {
     async function getProjet() {
       try {
-        // JSON local : A CHANGER LORS API
-        const response = await fetch(BASE_URL);
-        if (!response.ok) throw new Error("Fichier introuvable");
-        const data = await response.json();
-        const found = data.find((a) => a.id === id); // PAS DE NUMBER = REFAIRE LES FICHIER DATA
-        if (!found) throw new Error("Projet introuvable");
-        setProject(found);
+        const response = await fetch(`${API_URL}/api/projets/${id}`);
+
+        if (!response.ok) {
+          throw new Error("Données non trouvées");
+        }
+
+        const result = await response.json();
+        setProject(result);
       } catch (e) {
         setProjectErreur(true);
         toast.error("Impossible de charger le projet");

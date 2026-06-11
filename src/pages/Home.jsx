@@ -5,6 +5,8 @@ import AffichageHero from "../components/AffichageHero";
 import AffichageSelected from "../components/AffichageSelected";
 import StatutChargement from "../components/StatutChargement";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export default function Home() {
   /* GESTION DES ÉTATS (STATE)
     - profil : Initialisé à null car il représente un document unique (Objet).
@@ -16,17 +18,10 @@ export default function Home() {
   const [profilErreur, setProfilErreur] = useState(false);
   const [selectedErreur, setSelectedErreur] = useState(false);
 
-  // ====================================
-
-  /* EXTRACTION DU PROFIL 
-    Simule une requête ciblant un document unique (Ex: db.collection.findOne())
-    Le retour attendu est un objet brut, et non un tableau, injecté directement dans l'état.
-  */
-
   useEffect(() => {
     async function getProfil() {
       try {
-        const response = await fetch(`/hero.json`);
+        const response = await fetch(`${API_URL}/api/hero`);
 
         if (!response.ok) {
           throw new Error("Données non trouvées");
@@ -43,29 +38,18 @@ export default function Home() {
     getProfil();
   }, []);
 
-  // ====================================
-
-  /* EXTRACTION DES PROJETS SÉLECTIONNÉS
-    Simule une route d'API renvoyant un tableau de documents préalablement filtrés par le serveur (Ex: db.collection.find({ selected: true })).
-    Le retour attendu est un tableau d'objets, injecté directement dans l'état.
-  */
-
+  // logique d'extraction dans le backend
   useEffect(() => {
     async function getSelected() {
       try {
-        const response = await fetch(`/projets.json`);
+        const response = await fetch(`${API_URL}/api/projets/selected`);
 
         if (!response.ok) {
           throw new Error("Données non trouvées");
         }
 
         const result = await response.json();
-        // A SUPPRIMER LORS FILTRAGE API
-        const projetsSelected = result.filter(
-          (projet) => projet.selected === true,
-        );
-        const LimiteProjets = projetsSelected.slice(0, 3);
-        setSelected(LimiteProjets);
+        setSelected(result);
       } catch (e) {
         setSelectedErreur(true);
         toast.error("Impossible de charger les projets");
@@ -105,8 +89,9 @@ export default function Home() {
               Selected Work
             </p>
           </section>
-          {selected.map((data) => (
-            <AffichageSelected key={data.id} projetSelected={data} />
+          {/* [...] crée une copie : reverse() modifie le tableau d'origine, donc on copie avant pour ne pas casser le state sinon bug */}
+          {[...selected].reverse().map((data) => (
+            <AffichageSelected key={data._id} projetSelected={data} />
           ))}
         </>
       ) : (

@@ -11,7 +11,8 @@ export default function AffichageExperiences({ curriculumIntegral }) {
       <div className="flex flex-col gap-1">
         {/* CONST dans le map mais avant le return sinon casse car code dans return = jsx et non javascript + return = point d'arret et dans map car itération pour chaque élement du tableau */}
 
-        {curriculumIntegral.experiences.map((experience) => {
+        {[...curriculumIntegral.experiences].reverse().map((experience) => {
+          // Ici pas bug mais precaution = [...] crée une copie : reverse() modifie le tableau d'origine, donc on copie avant pour ne pas casser le state sinon bug
           const descriptionRaccourci =
             experience.description.length > 200
               ? experience.description.slice(0, 200).trimEnd() + "..."
@@ -29,8 +30,8 @@ export default function AffichageExperiences({ curriculumIntegral }) {
 
           return (
             <Link
-              to={`/cv/${experience.id}`}
-              key={experience.id}
+              to={`/cv/${experience._id}`}
+              key={experience._id}
               className="group block border-b border-black/10 hover:border-black py-5 px-4 transition-colors duration-300"
             >
               <div className="translate-x-0 group-hover:translate-x-2 transition-transform duration-300">

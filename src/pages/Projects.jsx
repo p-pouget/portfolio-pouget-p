@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import AffichageProjects from "../components/AffichageProjects";
 import StatutChargement from "../components/StatutChargement";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [projectsErreur, setProjectsErreur] = useState(false);
@@ -10,7 +12,7 @@ export default function Projects() {
   useEffect(() => {
     async function getProjects() {
       try {
-        const response = await fetch(`/projets.json`);
+        const response = await fetch(`${API_URL}/api/projets`);
 
         if (!response.ok) {
           throw new Error("Données non trouvées");
@@ -36,8 +38,9 @@ export default function Projects() {
         false
       ) : projects && projects.length > 0 ? (
         <>
-          {projects.map((data) => (
-            <AffichageProjects key={data.id} projetIntegral={data} />
+          {/* [...] crée une copie : reverse() modifie le tableau d'origine, donc on copie avant pour ne pas casser le state sinon bug */}
+          {[...projects].reverse().map((data) => (
+            <AffichageProjects key={data._id} projetIntegral={data} />
           ))}
         </>
       ) : (

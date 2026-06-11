@@ -19,7 +19,7 @@ export default function AffichageSelected({ projetSelected }) {
   return (
     <article className="px-4 md:px-24">
       <Link
-        to={`/projects/${projetSelected.id}`}
+        to={`/projects/${projetSelected._id}`}
         className="group block border-b border-black/10 hover:border-black px-4 py-5 cursor-pointer transition-colors duration-300"
       >
         <div className="translate-x-0 group-hover:translate-x-2 transition-transform duration-300">

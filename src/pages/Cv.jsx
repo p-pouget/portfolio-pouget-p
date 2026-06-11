@@ -6,6 +6,8 @@ import AffichageCompetences from "../components/AffichageCompetences";
 import AffichagePhoto from "../components/AffichagePhoto";
 import StatutChargement from "../components/StatutChargement";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export default function Cv() {
   const [curriculum, setCurriculum] = useState();
   const [curriculumErreur, setCurriculumErreur] = useState(false);
@@ -13,7 +15,7 @@ export default function Cv() {
   useEffect(() => {
     async function getCurriculum() {
       try {
-        const response = await fetch(`/curriculum.json`);
+        const response = await fetch(`${API_URL}/api/curriculum`);
 
         if (!response.ok) {
           throw new Error("Données non trouvées");

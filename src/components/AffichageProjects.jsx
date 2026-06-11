@@ -20,7 +20,7 @@ export default function AffichageProjects({ projetIntegral }) {
     <article className="md:px-24 md:max-w-xl md:mx-auto">
       {/* Le md:px n'est pas un doublon = permet de resserer colonnes */}
       <Link
-        to={`/projects/${projetIntegral.id}`}
+        to={`/projects/${projetIntegral._id}`}
         className="group block cursor-pointer"
       >
         {projetIntegral.img ? (

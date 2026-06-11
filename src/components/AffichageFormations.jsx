@@ -7,9 +7,11 @@ export default function AffichageFormations({ curriculumIntegral }) {
       <div className="border-b border-black mb-8" />
 
       <div className="flex flex-col gap-1">
-        {curriculumIntegral.formations.map((formation) => (
+        {[...curriculumIntegral.formations].reverse().map((formation) => (
+          // Ici pas bug mais precaution = [...] crée une copie : reverse() modifie le tableau d'origine, donc on copie avant pour ne pas casser le state sinon bug
+
           <div
-            key={formation.id}
+            key={formation._id}
             className="border-b border-black/10 py-5 px-4"
           >
             <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-0.5 md:gap-2">
